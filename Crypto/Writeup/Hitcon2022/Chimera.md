@@ -47,7 +47,7 @@ It's easy for us, when we have known more than four point in curve. We can use `
 
 **II . Factor n by ecm tech**
 
-gift is the result of $\#E(F_p)*\#E(F_q)$ . So we can choose a small factor c to calculate $\frac{gift}{c}P$ . If return a error, you can use error message to get a non-trival factor of n
+gift is the result of $\sharp E(F_p)*\sharp E(F_q)$ . So we can choose a small factor c to calculate $\frac{gift}{c}P$ . If return a error, you can use error message to get a non-trival factor of n
 
 **III . Get Gx, Gy**
 
@@ -61,7 +61,7 @@ Similar to the operation in SSAS attck. Refer to [this](://www.researchgate.net/
 
 **V . Solve HSSP**
 
-I ever see this tech in many challenges, but there's some difference. The small matrix consisted of the num between 0 and 255. This will caused the orthogonal lattice tech get some other vector with shorter norm but the true vector we need. I use a small trick to deal with it, modify lattice to get the result of $(v_0,v_1-k*v_0,...,v_n-k*v_{n-1})$. As I had hoped, I get the true $v_i$ when param k is 1.25.
+I ever see this tech in many challenges, but there's some difference. The small matrix consisted of the num between 0 and 255. This will caused the orthogonal lattice tech get some other vector with shorter norm but the true vector we need. I use a small trick to deal with it, modify lattice to get the result of $(v_0,v_1-kv_0,...,v_n-kv_{n-1})$ . As I had hoped, I get the true $v_i$ when param k is 1.25.
 
 **exp (SageMath)**
 
