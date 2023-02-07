@@ -53,7 +53,7 @@ gift is the result of $\sharp E(F_p)*\sharp E(F_q)$ . So we can choose a small f
 
 Because of the size of (Gx, Gy) is small. We can use LLL to get it.
 
-$L = \left[\begin{matrix}1&0&0&g\\0&g^2&0&ag\\0&0&g^3&bg\\0&0&0&n^2g \end{matrix}\right]$
+$L = \begin{bmatrix}1&0&0&g\\0&g^2&0&ag\\0&0&g^3&bg\\0&0&0&n^2g \end{bmatrix}$
 
 **IV . Solve ecdlp in $E(F_{p^2})$**
 
