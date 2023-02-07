@@ -58,7 +58,7 @@ L =
 \begin{bmatrix}
 1&0&0&g\\
 0&g^2&0&ag\\
-0&0&g^3&bg\
+0&0&g^3&bg\\
 0&0&0&n^2g 
 \end{bmatrix}
 $$
