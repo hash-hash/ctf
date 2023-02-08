@@ -1,6 +1,6 @@
 # Chimera
 
-A crypto challenge in hitcon2022. Simple prcedure but contains lots tricks. I didn't learn much about elliptic curve construct and ecm tech before. So finish this chal is meaningful for me. 
+A crypto challenge in hitcon2022. Simple prcedure but contains lots tricks. I didn't learn much about elliptic curve construct and ecm tech before. So finish this challenge is meaningful for me. 
 
 **Task**
 
@@ -72,7 +72,7 @@ Similar to the operation in SSAS attck. Refer to [this](://www.researchgate.net/
 
 I ever see this tech in many challenges, but there's some difference. The small matrix consisted of the num between 0 and 255. This will caused the orthogonal lattice tech get some other vector with shorter norm but the true vector we need. I use a small trick to deal with it, modify lattice to get the result of $(v_0,v_1-kv_0,...,v_n-kv_{n-1})$ . As I had hoped, I get the true $v_i$ when param k is 1.25.
 
-**exp (SageMath)**
+**Exp (SageMath)**
 
 ```python
 from hashlib import sha256
