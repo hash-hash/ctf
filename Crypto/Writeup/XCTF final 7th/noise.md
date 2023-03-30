@@ -21,7 +21,7 @@ $=>\vec{c}·\vec{v}=\sum a_i·\vec{b_i}·\vec{v}+\vec{e}·\vec{v}(mod~N)$
 
 取 $v$ 满足 $\vec{c}·\vec{v}=0(mod~N)$
 
-$\vec{b_i}·\vec{v}=0$    $\vec{e}·\vec{v}=0$
+有 $\vec{b_i}·\vec{v}=0$ 且 $\vec{e}·\vec{v}=0$
 
 满足条件 $\vec{v}$ 的组数是m-n-r(m变量，n+r个方程)
 
