@@ -1,3 +1,7 @@
+# noise
+
+一天满课只能晚上打，晚了两分钟还没交上，早知道翘课了，悲 :(
+
 ```python
 def gen(n, m, r, N):
     t1 = [ZZ.random_element(-2^15, 2^15) for _ in range(n*m)]
