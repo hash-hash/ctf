@@ -13,15 +13,15 @@ def gen(n, m, r, N):
 
 HSSP基础上加了error，实际上没有任何影响，并且题目给了56组数据只需要8组即可利用`orthogonal lattice`还原B，全取的话规约速度极慢，八组7分钟就能出
 
-$\vec{c}=\sum a_i*\vec{b_i}+\vec{e}(mod~N)$
+$\vec{c}=\sum a_i·\vec{b_i}+\vec{e}(mod~N)$
 
-$=>\vec{c}*\vec{v}=\sum a_i*\vec{b_i}*\vec{v}+\vec{e}*\vec{v}(mod~N)$
+$=>\vec{c}·\vec{v}=\sum a_i·\vec{b_i}·\vec{v}+\vec{e}·\vec{v}(mod~N)$
 
 只需$(a_1, ...,a_m,1)$正交格的最短向量量级在$2^{20}$以上即可
 
-取$v$满足$\vec{c}*\vec{v}=0(mod~N)$
+取$v$满足$\vec{c}·\vec{v}=0(mod~N)$
 
-$\vec{b_i}*\vec{v}=0$    $\vec{e}*\vec{v}=0$
+$\vec{b_i}·\vec{v}=0$    $\vec{e}·\vec{v}=0$
 
 满足条件$\vec{v}$的组数是m-n-r(m变量，n+r个方程)
 
