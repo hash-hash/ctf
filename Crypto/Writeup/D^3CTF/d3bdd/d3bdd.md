@@ -35,18 +35,13 @@ bdd这题是rlwe，所以需要求解一个理想格对应的约减对偶格，�
 
 将A写成矩阵的形式
 
-$\left[\begin{matrix}
-a_{511}&a_{510}&\cdots&a_{1}&a_{0}\\
-a_{510}&a_{509}&\cdots&a_0&-a_{511}\\
-\vdots&\vdots&\vdots&\ddots&\vdots\\
-a_{0}&-a_{511}&\cdots&-a_{2}&-a_{1}
-\end{matrix}\right]$ 
+$\left[\begin{matrix}a_{511}&a_{510}&\cdots&a_{1}&a_{0}\\a_{510}&a_{509}&\cdots&a_0&-a_{511}\\\vdots&\vdots&\vdots&\ddots&\vdots\\a_{0}&-a_{511}&\cdots&-a_{2}&-a_{1}\end{matrix}\right]$ 
 
-对于LCG，有 $\sum{_{i=0}^{15}f_ia_{k+i}}-a_{k+16}=0(mod~m)$
+对于LCG，有 $\sum$$_{i=0}^{15}f_ia_{k+i}-a_{k+16}=0(mod~m)$
 
 我们利用上式构造lattice去重组系数，最后选择了利用连续80个 $a_i$ 构造多项式 $t$，这需要我们舍弃掉A中的部分行，以满足 $t*A'=0(mod~m)$，这需要根据最后选择枚举的位置去舍弃
 
-由于rlwe的计算在 $Z_q$ 下，有等式 $t*A'=m·v$，其中v的模长比较小，构造格求系数g使 $g*m$ 足够小，粗略是 $\sqrt{q}$ 的量级
+由于rlwe的计算在 $Z_q$ 下，有等式 $t·A'=m·v$，其中v的模长比较小，构造格求系数g使 $g*m$ 足够小，粗略是 $\sqrt{q}$ 的量级
 
 这样我们可以利用以下步骤验证爆破的正确性
 
