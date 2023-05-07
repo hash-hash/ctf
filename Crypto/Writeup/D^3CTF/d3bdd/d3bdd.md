@@ -25,7 +25,7 @@
 
 ![image-20230507114131857](../AppData/Roaming/Typora/typora-user-images/image-20230507114131857.png)
 
-这个点在hint中已经给到了，而dual attack能否成功，一个重要的点在于能否找到合适的$x_j^T$，也就是能否有效约减dual lattice
+这个点在hint中已经给到了，而dual attack能否成功，一个重要的点在于能否找到合适的 $x_j^T$ ，也就是能否有效约减dual lattice
 
 ***Solution***
 
@@ -34,30 +34,29 @@ bdd这题是rlwe，所以需要求解一个理想格对应的约减对偶格，�
 正常来说求一个高维格的约化基效果是比较差的，但是这里题目使用的是特殊的lcg进行格的生成
 
 将A写成矩阵的形式
-$$
-\left[\begin{matrix}
+
+$\left[\begin{matrix}
 a_{511}&a_{510}&\cdots&a_{1}&a_{0}\\
 a_{510}&a_{509}&\cdots&a_0&-a_{511}\\
 \vdots&\vdots&\vdots&\ddots&\vdots\\
 a_{0}&-a_{511}&\cdots&-a_{2}&-a_{1}
-\end{matrix}\right]
-$$
+\end{matrix}\right]$
 
-对于LCG，有 $\sum_{i=0}^{15}f_ia_{k+i}-a_{k+16}=0(mod~m)~~(*)$
+对于LCG，有 $\sum _{i=0}^{15} f_ia_{k+i}-a_{k+16}=0(mod~m)$
 
-我们利用$(*)$构造lattice去重组系数，最后选择了利用连续80个$a_i$构造多项式 $t$ ，这需要我们舍弃掉A中的部分行，以满足 $t*A'=0(mod~m)$，这需要根据最后选择枚举的位置去舍弃
+我们利用上式构造lattice去重组系数，最后选择了利用连续80个 $a_i$ 构造多项式 $t$，这需要我们舍弃掉A中的部分行，以满足 $t*A'=0(mod~m)$，这需要根据最后选择枚举的位置去舍弃
 
-由于rlwe的计算在 $Z_q$ 下，有等式 $t*A'=m*v$ ，其中v的模长比较小，构造格求系数g使 $g*m$ 足够小，粗略是 $\sqrt{q}$ 的量级
+由于rlwe的计算在 $Z_q$ 下，有等式 $t*A'=m*v$，其中v的模长比较小，构造格求系数g使 $g*m$ 足够小，粗略是 $\sqrt{q}$ 的量级
 
 这样我们可以利用以下步骤验证爆破的正确性
 
 $A=[A'|A'']$  $s=[s'|s'']$
 
-$A*s+e=b(mod~q)$
+$A·s+e=b(mod~q)$
 
-$g*m*v*s'+g*t*e=g*t*A'*s'+g*t*e=g*t*(b-A''*s'')(mod~q)$
+$g·m·v·s'+g·t·e=g·t·A'·s'+g·t·e=g·t·(b-A''·s'')(mod~q)$
 
-左边的量级为 $\sqrt{q}*||v||*||s||+\sqrt{q}*||t||*||e||$
+左边的量级为 $\sqrt{q}·||v||·||s||+\sqrt{q}·||t||·||e||$
 
 现在我们爆破 $s''$，如果正确，上式左边的结果会较小，否则将趋于 $\frac{q}{2}$ 的数量级
 
