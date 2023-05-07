@@ -23,7 +23,7 @@
 
 **Dual Attack**
 
-![image-20230507114131857](../AppData/Roaming/Typora/typora-user-images/image-20230507114131857.png)
+![image](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-05-07%20114120.png)
 
 这个点在hint中已经给到了，而dual attack能否成功，一个重要的点在于能否找到合适的 $x_j^T$ ，也就是能否有效约减dual lattice
 
@@ -40,7 +40,7 @@ a_{511}&a_{510}&\cdots&a_{1}&a_{0}\\
 a_{510}&a_{509}&\cdots&a_0&-a_{511}\\
 \vdots&\vdots&\vdots&\ddots&\vdots\\
 a_{0}&-a_{511}&\cdots&-a_{2}&-a_{1}
-\end{matrix}\right]$
+\end{matrix}\right]$ 
 
 对于LCG，有 $\sum _{i=0}^{15} f_ia_{k+i}-a_{k+16}=0(mod~m)$
 
