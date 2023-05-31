@@ -23,7 +23,7 @@
 
 **Dual Attack**
 
-![image]([https://s2.loli.net/2023/05/13/28qcLEMznDjKZfO.png](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/image-20230531191651895.png))
+![](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/image-20230531191651895.png)
 
 这个点在hint中已经给到了，而dual attack能否成功，一个重要的点在于能否找到合适的 $x_j^T$ ，也就是能否有效约减dual lattice
 
