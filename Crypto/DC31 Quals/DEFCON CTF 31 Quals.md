@@ -6,7 +6,7 @@ First time to Participate DC, with less cryptography element but also make me in
 
 It's wonderful to solve a problem with players from different directions
 
-![image-20230531141830826](../AppData/Roaming/Typora/typora-user-images/image-20230531141830826.png)
+![](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/image-20230531141830826.png)
 
 Finally, just to record some crypto part.
 
@@ -18,7 +18,7 @@ If we can recover the state of prng, the problem is easy. guessed :)
 
 [WELL Algorithm](https://en.wikipedia.org/wiki/Well_equidistributed_long-period_linear)
 
-![image-20230531172459990](../AppData/Roaming/Typora/typora-user-images/image-20230531172459990.png)
+![](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/image-20230531172459990.png)
 
 The option in well512 is all linear, so we can use a matrix to replace it. We can easily verify this.
 
@@ -100,7 +100,7 @@ for idx in range(16):
     assert check1 == check2
 ```
 
-![image-20230531174133782](../AppData/Roaming/Typora/typora-user-images/image-20230531174133782.png)
+![](https://picture-1311455354.cos.ap-shanghai.myqcloud.com/image-20230531174133782.png)
 
 Contruct the matrix $M_i,L_i$ using $state_i = 2^i$ to get the matrix's $i^{th}$ column
 
