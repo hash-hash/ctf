@@ -67,6 +67,6 @@ According to $x_i$ coefficient 1 or -1, use 200 equations to construct matrix A.
 
 Find the vector $u$ that satisfies $u\cdot A=(1, 0, \cdots, 0)\,(mod\,q)$
 
-if $mask_0=0$ ，$\prod\limits_{i=1}\limits^{200}c_i^{u_i}=65537^0=1(mod\,p)$
+if $mask_0=0$ ，$\prod\limits_{i=1}\limits^{200}c_i^{u_i}=65537^0=1(mod p)$
 
 In the same way, find the linear coefficient $u_i$ of other one-hot encodings to check other positions of the mask, and finally recover the mask.
