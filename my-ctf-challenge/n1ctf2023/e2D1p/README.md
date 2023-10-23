@@ -50,7 +50,9 @@ After LLL, take part of it and do GCD to recover the modulus p.
 
 #### II. Recovering mask
 
-First, for one bit message $m,x$ , $x\oplus m=\left\{
+First, for one bit message $m,x$ , 
+
+$x\oplus m=\left\{
 \begin{array}{}
 x,\,m=0\\
 1-x,\,m=1
