@@ -52,12 +52,14 @@ After LLL, take part of it and do GCD to recover the modulus p.
 
 First, for one bit message $m,x$ , 
 
-$x\oplus m=\left\{
+$$
+x\oplus m=\left\{
 \begin{array}{}
 x,\,m=0\\
 1-x,\,m=1
 \end{array}
-\right.$
+\right.
+$$
 
 For $65537^{\sum2^i\cdot(x_i\oplus m_i)}=c\,(mod\,p)$
 
