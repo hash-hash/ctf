@@ -17,7 +17,7 @@ Based on the idea of differential fault analysis, SM4 was partially modified. Th
 
 The encryption of this challenge is based on SM4 and adds a layer of invertible P component. The process is as follows
 
-<img src="/Users/h45h_h45h/Library/Application Support/typora-user-images/image-20231005195729054.png" alt="image-20231005195729054" style="zoom:50%;" />
+<img src="https://oyrd-1313391192.cos.ap-nanjing.myqcloud.com/images/image-20231005195729054.png" alt="image-20231005195729054" style="zoom:50%;" />
 
 Where P can be expressed as $P(x_1, x_2, x_3,x_4)=(Sbox_1(x_1)\lll3,Sbox_2(x_2)\lll4,Sbox_3(x_3)\lll5,Sbox_3(x_4)\lll6)$
 
@@ -35,11 +35,11 @@ $X_{35}'=P_1'(X_{31})\oplus T(P_2'(X_{32})\oplus P_3'(X_{33})\oplus P_4'(X_{34})
 
 After noting $P_1'$ and $P_1$ are still the same, 
 
-$\Rightarrow \Delta X_{35}=T(P_2(X_{32})\oplus P_3(X_{33})\oplus P_4(X_{34})\oplus rk_{32})\oplus T(P_2'(X_{32})\oplus P_3'(X_{33})\oplus P_4'(X'_{34})\oplus rk_{32})$
+$\Delta X_{35}=T(P_2(X_{32})\oplus P_3(X_{33})\oplus P_4(X_{34})\oplus rk_{32})\oplus T(P_2'(X_{32})\oplus P_3'(X_{33})\oplus P_4'(X'_{34})\oplus rk_{32})$
 
 Due to $T=L\cdot S$, 
 
-$\Rightarrow L^{-1}(\Delta X_{35})=S(Y_{32}\oplus Y_{33}\oplus Y_{34}\oplus rk_{32})\oplus S(Y'_{32}\oplus Y'_{33}\oplus Y'_{34}\oplus rk_{32})$
+$L^{-1}(\Delta X_{35})=S(Y_{32}\oplus Y_{33}\oplus Y_{34}\oplus rk_{32})\oplus S(Y'_{32}\oplus Y'_{33}\oplus Y'_{34}\oplus rk_{32})$
 
 Reverse L can be solved by matrix or z3.
 
