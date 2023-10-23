@@ -63,6 +63,7 @@ y_0\\
 y_0
 \end{bmatrix}
 $$
+
 From this, we express the component difference $\delta_i$ of $\vec{s}$ as follows,
 $$
 \begin{bmatrix}
