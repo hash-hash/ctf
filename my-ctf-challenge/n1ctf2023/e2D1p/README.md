@@ -53,8 +53,7 @@ After LLL, take part of it and do GCD to recover the modulus p.
 First, for one bit message $m,x$ , 
 
 $$
-x\oplus m
-=
+x\oplus m =
 \left\{
 \begin{array}
 x, m=0\\
