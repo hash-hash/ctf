@@ -64,6 +64,7 @@ y_0
 \end{bmatrix}
 $$
 
+
 From this, we express the component difference $\delta_i$ of $\vec{s}$ as follows,
 $$
 \begin{bmatrix}
@@ -79,6 +80,8 @@ c^{-1}\cdot \begin{bmatrix}
     z_1-z_m \\
 \end{bmatrix}
 $$
+
+
 Substitute the relationship $\vec{A}\cdot\vec{s}=t$ ,
 $$
 \begin{bmatrix}
@@ -91,6 +94,8 @@ s_1-\delta_1\\
 s_1-\delta_{m-1}
 \end{bmatrix}=t
 $$
+
+
 $\Rightarrow (\sum\limits_{i=1}\limits^m a_i)\cdot s_1=t+\sum\limits_{i=1}\limits^{m-1}a_{i+1}\delta_i$
 
 Find $s_1$ and then subtract the corresponding difference $\delta_i$ to recover $\vec{s}$
