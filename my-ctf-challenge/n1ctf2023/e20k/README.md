@@ -21,9 +21,7 @@ The interaction process will initialize the state of ECPrng based on the input p
 
 $N = p\cdot(2p-1)\cdot q$
 
-Using the structure of $p\cdot (2p-1)$ , it can be written as  $p'\cdot \frac{p'+1}{2}$.  Using the trick in [ImaginaryCTF 2023 Sus](https://github.com/maple3142/My-CTF-Challenges#imaginaryctf-2023)
-
-choose a suitable quadratic constructing quotient ring to recover $p$.
+Using the structure of $p\cdot (2p-1)$ , it can be written as  $p'\cdot \frac{p'+1}{2}$.  Using the trick in [ImaginaryCTF 2023 Sus](https://github.com/maple3142/My-CTF-Challenges#imaginaryctf-2023), choose a suitable quadratic constructing quotient ring to recover $p$.
 
 #### II. Calculate 3-torsion
 
