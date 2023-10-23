@@ -54,10 +54,10 @@ First, for one bit message $m,x$
 
 $$
 x\oplus m =\left\{
-\begin{array}
+\begin{aligned}
 x,m=0\\
 1-x,m=1
-\end{array}
+\end{aligned}
 \right.
 $$
 
