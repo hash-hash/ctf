@@ -68,6 +68,6 @@ L=
 \end{matrix}\right]
 $$
 
-Try LLL to get short vector $(10^d\cdot (s-t^2),\,-10^d\cdot t,\,-10^{\delta+d},\,\Delta)$
+Try LLL to get short vector $(10^d\cdot (s-t^2),-10^d\cdot t,-10^{\delta+d},\Delta)$
 
 s can be recovered by using the first and second components. 
