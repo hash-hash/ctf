@@ -17,9 +17,9 @@ Adapted from the N1CTF 2022 "ezdlp", the difference is that we xor the mask in t
 
 #### I. Recovering modulus p
 
-We have 200 equations $65537^{m_i⊕mask}=c_i\,(mod\,p)$
+We have 200 equations $65537^{m_i⊕mask}=c_i (mod p)$
 
-Use LLL to construct small coefficients $t_i$ , satisfying $\prod c_i^{t_i}=\prod c_j^{t_j}\,(mod\,p)$
+Use LLL to construct small coefficients $t_i$ , satisfying $\prod c_i^{t_i}=\prod c_j^{t_j} (mod p)$
 
 Through $GCD(\prod c_i^{t_i}-\prod c_j^{t_j},\prod c_i^{t'_i}-\prod c_j^{t'_j})$ to recover the modulus p.
 
@@ -59,13 +59,13 @@ x& \text{m=0}\\
 \end{cases}$$
 
 
-For $65537^{\sum2^i\cdot(x_i\oplus m_i)}=c\,(mod\,p)$
+For $65537^{\sum2^i\cdot(x_i\oplus m_i)}=c (mod p)$
 
-We can transform it to $(65537)^{\sum\limits_{\{i|m_i=0\}}2^i\cdot x_i+\sum\limits_{\{j|m_j=1\}}2^j\cdot(-x_j)}=c\cdot 65537^{-\sum\limits_{\{j|m_j=1\}}2^j}\,(mod\,p)$
+We can transform it to $(65537)^{\sum\limits_{\{i|m_i=0\}}2^i\cdot x_i+\sum\limits_{\{j|m_j=1\}}2^j\cdot(-x_j)}=c\cdot 65537^{-\sum\limits_{\{j|m_j=1\}}2^j} (mod p)$
 
 According to $x_i$ coefficient 1 or -1, use 200 equations to construct matrix A.
 
-Find the vector $u$ that satisfies $u\cdot A=(1, 0, \cdots, 0)\,(mod\,q)$
+Find the vector $u$ that satisfies $u\cdot A=(1, 0, \cdots, 0)(mod q)$
 
 if $mask_0=0$ , $\prod\limits_{i=1}\limits^{200}c_i^{u_i}=65537^0=1(mod p)$
 
