@@ -41,7 +41,6 @@ Solve the roots of the polynomial on $F_p$ , and use CRT to find the 3-torsion o
 
 P generate the proof:  $\vec{z}=\vec{s}\cdot c+\vec{y}$ . When the component of $\vec{y}$ is sampled, Random will be reset based on the ECPrng generated value. By setting the initial point to the element in $E[3]$, since $4\cdot Q=Q$, the State in ECPrng will remain constant,  the components of $\vec{y}$ are consistent, and we can get the following relationship
 
-
 $$
 \begin{bmatrix}
 z_1\\
@@ -66,7 +65,6 @@ $$
 
 From this, we express the component difference $\delta_i$ of $\vec{s}$ as follows,
 
-
 $$
 \begin{bmatrix}
    \delta_1 \\
@@ -82,9 +80,8 @@ c^{-1}\cdot \begin{bmatrix}
 \end{bmatrix}
 $$
 
-
-
 Substitute the relationship $\vec{A}\cdot\vec{s}=t$ ,
+
 $$
 \begin{bmatrix}
 a_1&a_2&\dots a_m
@@ -97,11 +94,7 @@ s_1-\delta_{m-1}
 \end{bmatrix}=t
 $$
 
-
-
 $\Rightarrow (\sum\limits_{i=1}\limits^m a_i)\cdot s_1=t+\sum\limits_{i=1}\limits^{m-1}a_{i+1}\delta_i$
-
-
 
 Find $s_1$ and then subtract the corresponding difference $\delta_i$ to recover $\vec{s}$
 
