@@ -15,7 +15,7 @@ Select a specific curve $E$ on $F_{p^2}$ based on guess, and then do a 3-isogeny
 
 ## Solution
 
-#### I. Query $(j')^{-1}$
+#### I. Query
 
 Since  $x\in Z_{p^2}$,  $j'\in F_{p^2}$, and the order of $j'$ is $p^2-1$.
 
