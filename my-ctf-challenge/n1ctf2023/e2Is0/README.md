@@ -58,6 +58,7 @@ $\Rightarrow s=t^2+r^2\cdot 10^{-2d}+\epsilon^2+2\cdot t\cdot r\cdot 10^{-d}+2\c
 $\Rightarrow (s-t^2)\cdot 10^{2d}-r^2-2\cdot t\cdot r\cdot 10^d\approx2\cdot 10^{\delta+d}$
 
 Construct the lattice in this way,
+
 $$
 L=
 \left[\begin{matrix}
@@ -66,6 +67,7 @@ L=
 &&10^{d+\delta}&r^2
 \end{matrix}\right]
 $$
+
 Try LLL to get short vector $(10^d\cdot (s-t^2),\,-10^d\cdot t,\,-10^{\delta+d},\,\Delta)$
 
 s can be recovered by using the first and second components. 
