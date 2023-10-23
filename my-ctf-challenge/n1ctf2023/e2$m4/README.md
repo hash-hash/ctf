@@ -31,11 +31,11 @@ $X_{35}=P_1(X_{31})\oplus T(P_2(X_{32})\oplus P_3(X_{33})\oplus P_4(X_{34})\oplu
 
 $X_{35}'=P_1'(X_{31})\oplus T(P_2'(X_{32})\oplus P_3'(X_{33})\oplus P_4'(X_{34})\oplus rk_{32})$
 
-After noting $P_1'$ and $P_1$ are still the same,
+After noting $P_1'$ and $P_1$ are still the same
 
 $\Rightarrow \Delta X_{35}=T(P_2(X_{32})\oplus P_3(X_{33})\oplus P_4(X_{34})\oplus rk_{32})\oplus T(P_2'(X_{32})\oplus P_3'(X_{33})\oplus P_4'(X'_{34})\oplus rk_{32})$
 
-Due to $T=L\cdot S$,
+Due to $T=L\cdot S$
 
 $\Rightarrow L^{-1}(\Delta X_{35})=S(Y_{32}\oplus Y_{33}\oplus Y_{34}\oplus rk_{32})\oplus S(Y'_{32}\oplus Y'_{33}\oplus Y'_{34}\oplus rk_{32})$
 
