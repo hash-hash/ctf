@@ -98,7 +98,10 @@ s_1-\delta_{m-1}
 $$
 
 
+
 $\Rightarrow (\sum\limits_{i=1}\limits^m a_i)\cdot s_1=t+\sum\limits_{i=1}\limits^{m-1}a_{i+1}\delta_i$
+
+
 
 Find $s_1$ and then subtract the corresponding difference $\delta_i$ to recover $\vec{s}$
 
