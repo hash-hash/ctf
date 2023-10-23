@@ -11,7 +11,7 @@ I've hidden my treasure on this intricate path, and I think it's safe enough : )
 
 ## Details
 
-Select a specific curve $E$ on $F_{p^2}$ based on guess, and then do a 3-isogeny to get codomain $E'$, and the corresponding j-invariants are j'. We can query the real part of $(j')^{x^r-1(mod\,p^2)}$. Finally, we need to recover the value of guess. 
+Select a specific curve $E$ on $F_{p^2}$ based on guess, and then do a 3-isogeny to get codomain $E'$, and the corresponding j-invariants are j'. We can query the real part of $(j')^{x^r-1(mod p^2)}$. Finally, we need to recover the value of guess. 
 
 ## Solution
 
