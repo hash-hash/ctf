@@ -32,6 +32,7 @@ If $mask_j=0$ , you only need to ensure that $\sum\limits_{\{i|m_{i,j}=1\}}t_i=0
 If $mask_j=1$ , you only need to ensure that $\sum\limits_{\{i|m_{i,j}=0\}}t_i=0$
 
 Construct the lattice as follows,
+
 $$
 \begin{bmatrix}
 1&&&&&m_{1,0}\cdot g&m_{1,1}\cdot g&\cdots&m_{1,n}\cdot g&g\\
@@ -40,6 +41,7 @@ $$
 &&&&1&m_{200,0}\cdot g&m_{200,1}\cdot g&\cdots&m_{200,n}\cdot g&g\\
 \end{bmatrix}
 $$
+
 The last column ensures that $\sum\limits_{\{i|m_{i,j}=0\}}t_i=0$
 
 After LLL, take part of it and do GCD to recover the modulus p.
