@@ -21,44 +21,41 @@ The interaction process will initialize the state of ECPrng based on the input p
 
 $N = p\cdot(2p-1)\cdot q$
 
-Using the structure of $p\cdot (2p-1)$ , it can be written as  $p'\cdot \frac{p'+1}{2}$.  Using the trick in [ImaginaryCTF 2023 Sus](https: //github.com/maple3142/My-CTF-Challenges#imaginaryctf-2023), choose a suitable quadratic constructing quotient ring to recover $p$.
+Using the structure of $p\cdot (2p-1)$ , it can be written as  $p'\cdot \frac{p'+1}{2}$.  Using the trick in [ImaginaryCTF 2023 Sus](https: //github.com/maple3142/My-CTF-Challenges#imaginaryctf-2023) , choose a suitable quadratic constructing quotient ring to recover $p$.
 
 #### II. Calculate 3-torsion
 
 That is, calculate the point $Q$ that satisfies the form $2\cdot Q=-Q$
 
-$\left\{
-\begin{array}{ll}
-    \lambda = \frac{3x^2+a}{2y} \\
-    \lambda^2-2\cdot x = x \\
-\end{array}
-\right.$
+$\lambda = \frac{3x^2+a}{2y}$
+
+$ \lambda^2-2\cdot x = x$ 
 
 Solve the roots of the polynomial on $F_p$ , and use CRT to find the 3-torsion on $E_n$.
 
-> *@Neobeo* offers a better way, take 15-torsion which use $4Q=-Q$ and $4Q=Q$, which will have a higher success rate.
+> *@Neobeo* offers a better way, take 15-torsion which use 4Q=-Q and 4Q=Q , which will have a higher success rate.
 
 #### III. Transform Ring-SIS Problem
 
 P generate the proof:  $\vec{z}=\vec{s}\cdot c+\vec{y}$ . When the component of $\vec{y}$ is sampled, Random will be reset based on the ECPrng generated value. By setting the initial point to the element in $E[3]$, since $4\cdot Q=Q$, the State in ECPrng will remain constant,  the components of $\vec{y}$ are consistent, and we can get the following relationship
 $$
 \begin{bmatrix}
-    z_1 \\
-    z_2 \\
+    z_1\\
+    z_2\\
     \vdots\\
-    z_m \\
+    z_m
 \end{bmatrix}=
 c\cdot \begin{bmatrix}
-    s_1 \\
-    s_2 \\
+    s_1\\
+    s_2\\
     \vdots\\
-    s_m \\
+    s_m
 \end{bmatrix}+
 \begin{bmatrix}
-    y_0 \\
-    y_0 \\
+    y_0\\
+    y_0\\
     \vdots\\
-    y_0 \\
+    y_0
 \end{bmatrix}
 $$
 From this, we express the component difference $\delta_i$ of $\vec{s}$ as follows,
