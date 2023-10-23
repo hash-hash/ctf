@@ -54,7 +54,7 @@ First, for one bit message $m,x$ ,
 
 $$
 x\oplus m=
-\left\{
+\left{
 \begin{array}{}
 x, m=0\\
 1-x, m=1
