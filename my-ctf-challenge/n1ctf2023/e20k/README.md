@@ -31,7 +31,7 @@ That is, calculate the point $Q$ that satisfies the form $2\cdot Q=-Q$
 
 $\lambda = \frac{3x^2+a}{2y}$
 
-$ \lambda^2-2\cdot x = x$ 
+$\lambda^2-2\cdot x = x$ 
 
 Solve the roots of the polynomial on $F_p$ , and use CRT to find the 3-torsion on $E_n$.
 
