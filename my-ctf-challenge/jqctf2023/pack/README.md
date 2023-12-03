@@ -53,3 +53,6 @@ $\Rightarrow \sum (a_i\cdot \Phi(c_i))\cdot \Phi(e_i)=0$
 
 这里同样是个SSP，利用两组结果构造lattice做BKZ求出目标向量后映射回去即可
 
+## Summary
+
+参数没有卡好，导致g6k直接给挂出来了，实际上是不希望能直接求解pack这一层，预期是通过求解epack，构造映射将多组结果combine起来进行求解
