@@ -28,5 +28,6 @@ L=\left[\begin{matrix}
 &&&&p_n
 \end{matrix}\right]
 $$
+
 从做题情况来看，另一种想法是利用二分通过大小关系逐步限制FLAG范围，也是可行的。
 
