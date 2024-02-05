@@ -18,6 +18,7 @@ Pursue the ultimate CCA security🔒.
 对于密文 $(c_1,c_2)$ 可以通过发送 $(c_1,a\cdot c_2(mod\ p))$ 获取 $a\cdot m(mod\ p)$ 过 `AES-GCM` 解密的结果，透过观察解密结果的长度可以判断 $a\cdot m(mod\ p)$ 的比特数，对于小于64字节的解密结果可以推出对应的 $a_i\cdot m(mod\ p_i)$ 的高8比特为0，相当于求解一个HNP
 
 lattice 构造如下
+
 $$
 L=\left[\begin{matrix}
 2^\alpha&a_1&a_2&\cdots&a_n\\
