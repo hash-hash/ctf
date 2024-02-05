@@ -19,7 +19,7 @@ The eval function is full of dangers, taste the new IEV@L function.
 
 函数 ihash 会检测是否进入自环，若进入自环则报错(同源图中自环数目较少)，注意到同源图为无向图，故限制哈希游走时不能从当前节点走到上一步的节点，这样可以利用每一比特信息决定当前节点走向
 
-由于选择的模数比较小，图中任意两点存在规模为 $log_2N$ 的路径，$N\approx\lfloor\frac{p}{12}\rfloor$ ，可以利用中间相遇的想法进行路径求解
+由于选择的模数比较小，图中任意两点存在规模为 $log_2N$ 的路径，$N\lfloor\frac{p}{12}\rfloor$ ，可以利用中间相遇的想法进行路径求解
 
 下面解决如何构造 cmd
 
