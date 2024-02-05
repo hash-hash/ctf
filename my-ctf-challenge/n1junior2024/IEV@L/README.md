@@ -19,7 +19,7 @@ The eval function is full of dangers, taste the new IEV@L function.
 
 函数 ihash 会检测是否进入自环，若进入自环则报错(同源图中自环数目较少)，注意到同源图为无向图，故限制哈希游走时不能从当前节点走到上一步的节点，这样可以利用每一比特信息决定当前节点走向
 
-由于选择的模数比较小，图中任意两点存在规模为 $log_2N$ 的路径，$N\approx\lfloor\frac{p}{12}\rfloor$，可以利用中间相遇的想法进行路径求解
+由于选择的模数比较小，图中任意两点存在规模为 $log_2N$ 的路径，$N\approx\lfloor\frac{p}{12}\rfloor$ ，可以利用中间相遇的想法进行路径求解
 
 下面解决如何构造 cmd
 
@@ -27,9 +27,7 @@ pyjail 里有大量技巧在不过滤的情况下利用 eval，但是这里需�
 
 出题时采用的 `__import__('os').system('/bin/sh;XXX')` 这种类似命令注入的方式，或者也可以采用 `cat /FLAG xxx` 的方式，但是需要明确文件名和路径
 
-后来问了下Nightu师傅，发现还有一些其他的方法，可以自行了解
-
-<img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/image-20240118170625717.png" alt="image-20240118170625717" style="zoom: 50%;" />
+后来问了下Nightu师傅，发现还有一些其他的方法，`[a:=__import__('os').system("sh"),a:="XXX"]` 以及 `{1:"XXX",2:__import__('os').system("sh")}` 等可以自行了解
 
 这样只需要完成  `ihash("__import__('os').system('/bin/sh;")` 到 `rev_ihash("')")` 的路径搜索
 
