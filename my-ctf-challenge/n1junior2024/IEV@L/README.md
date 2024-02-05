@@ -21,7 +21,7 @@ The eval function is full of dangers, taste the new IEV@L function.
 
 由于选择的模数比较小，图中任意两点存在规模为 $log_2N$ 的路径
 
-$N\approx\lfloor\frac{p}{12}\rfloor$ ，可以利用中间相遇的想法进行路径求解
+其中 $N\approx\lfloor\frac{p}{12}\rfloor$ ，可以利用中间相遇的想法进行路径求解
 
 下面解决如何构造 cmd
 
