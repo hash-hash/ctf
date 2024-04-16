@@ -1,7 +1,7 @@
 ## c0d3
 
 + Category: **Crypto**
-+ Difficulty: ★
++ Difficulty: ★☆
 + Tag: **McEliece, Reed Solomon Codes**
 
 ## Description
