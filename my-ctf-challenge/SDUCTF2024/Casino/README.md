@@ -1,7 +1,7 @@
 ## Casino
 
 + Category: **Crypto**
-+ Difficulty: ★
++ Difficulty: ★☆
 + Tag: **Isogeny**
 
 ## Description
