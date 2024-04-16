@@ -30,7 +30,3 @@ A secure authentication system, but broken nowadays :( .
 ## References
 
 [An elementary introduction to hyperelliptic curves](https://www.math.uwaterloo.ca/~ajmeneze/publications/hyperelliptic.pdf)
-
-## Summary
-
-一开始对题目难度的评估上有点问题，实际上虽然都是一些陈旧的trick但是组合起来还是比较麻烦的
