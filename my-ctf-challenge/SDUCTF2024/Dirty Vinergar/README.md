@@ -1,7 +1,7 @@
 ## Dirty Vinegar
 
 + Category: **Crypto**
-+ Difficulty: ★★
++ Difficulty: ★★☆
 + Tag: **UOV**
 
 ## Description
